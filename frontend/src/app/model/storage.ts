@@ -1,8 +1,8 @@
 import { Product } from "./product";
 
 export class Storage{
-    
-    storageId: number = 0; 
+
+    _id: string = "";
     name: string = "";
     place: string = "";
     products: Product[] = [];

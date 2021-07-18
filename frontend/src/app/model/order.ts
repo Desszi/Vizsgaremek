@@ -5,11 +5,13 @@ import { User } from "./user";
 
 export class Order {
 
-    orderId: number = 0;
+    _id: string = "";
     name: string = "";
     businessUser: User =  new User();
     products: Product[] = [];
     transport: Transport = new Transport();
+    time: Date = new Date();
+    comment: string = "";
     active: boolean = false;
 
 }

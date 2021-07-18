@@ -1,7 +1,8 @@
 export class Product {
 
-    productId: number = 0;
+    _id: string = "";
     name: string = "";
+    description: string ="";
     price: number = 0;
     storage: Storage =  new Storage();
     available: boolean = false;

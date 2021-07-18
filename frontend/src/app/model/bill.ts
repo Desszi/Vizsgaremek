@@ -2,8 +2,8 @@ import { Product } from "./product";
 import { User } from "./user";
 
 export class Bill {
-    
-    billId: number = 0;
+
+    _id: string = "";
     name: string = "";
     customer: User =  new User();
     products: Product[] = [];
