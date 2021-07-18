@@ -1,12 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { User } from '../model/user';
+import { Transport } from '../model/transport';
 import { BaseService } from './base.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService extends BaseService<User>{
+export class TransportService extends BaseService<Transport>{
 
   constructor(
     public http: HttpClient,
