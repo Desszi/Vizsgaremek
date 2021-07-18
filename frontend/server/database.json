@@ -1,8 +1,65 @@
 {
     "users": [
         {
-
-        }
+            "_id":1,
+            "first_name":"Ali",
+            "last_name":"Carus",
+            "birthDate":"9/28/1987",
+            "birthPlace":"Noyelles-sous-Lens",
+            "email":"acarus0@admin.ch",
+            "address":"76854 Barnett Crossing",
+            "active":false,
+            "businessRelationship":"customer"
+        },
+            
+        {
+            "_id":2,
+            "first_name":"Ulrike",
+            "last_name":"Heinert",
+            "birthDate":"8/25/1958",
+            "birthPlace":"Jishui",
+            "email":"uheinert1@businessinsider.com",
+            "address":"8 Thackeray Circle",
+            "active":true,
+            "businessRelationship":"customer"
+        },
+            
+        {
+            "_id":3,
+            "first_name":"Sergei",
+            "last_name":"Goodchild",
+            "birthDate":"7/12/1952",
+            "birthPlace":"Belovodskoye",
+            "email":"sgoodchild2@hao123.com",
+            "address":"97 Clemons Parkway",
+            "active":true,
+            "businessRelationship":"supplier"
+        },
+            
+        {
+            "_id":4,
+            "first_name":"Priscella",
+            "last_name":"Worthy",
+            "birthDate":"4/11/1943",
+            "birthPlace":"Jianzhatan",
+            "email":"pworthy3@hexun.com",
+            "address":"48 Rigney Junction",
+            "active":false,
+            "businessRelationship":"business partner"
+        },
+            
+        {
+            "_id":5,
+            "first_name":"Jed",
+            "last_name":"Peppett",
+            "birthDate":"3/3/2002",
+            "birthPlace":"Zouma",
+            "email":"jpeppett4@goo.ne.jp",
+            "address":"3 Stang Hill",
+            "active":true,
+            "businessRelationship":"customer"
+        }    
+        
     ], 
     "bills": [
         {
