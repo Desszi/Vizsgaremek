@@ -15,8 +15,8 @@ export class ConfigService {
 
   userColumns: ITableColumn[] = [
     { key: "_id", title: "#" }, 
-    { key: "firstName", title: "First Name" }, 
-    { key: "lastName", title: "Last Name" },
+    { key: "first_name", title: "First Name" }, 
+    { key: "last_name", title: "Last Name" },
     { key: "birthDate", title: "Birthday"  },
     { key: "birthPlace", title: "Birthplace" },
     { key: "email", title: "Email Address" },
@@ -32,7 +32,7 @@ export class ConfigService {
     { key: "description", title: "Description" },
     { key: "price", title: "Price"  },
     { key: "available", title: "Available" },
-    { key: "storage", title: "Storage" }, 
+    //{ key: "storage", title: "Storage" }, 
     
   ];
 
@@ -59,7 +59,7 @@ export class ConfigService {
   storageColumns: ITableColumn[] = [
     { key: "_id", title: "#" }, 
     { key: "name", title: "Storage Name" }, 
-    { key: "Place", title: "Place" },
+    { key: "place", title: "Place" },
     { key: "opened", title: "Opened"  },
     { key: "products", title: "Products" }, 
     
@@ -68,7 +68,7 @@ export class ConfigService {
   transportColumns: ITableColumn[] = [
     { key: "_id", title: "#" }, 
     { key: "travelBy", title: "Vehicle" }, 
-    { key: "destination", title: "Destination Place" },
+    { key: "place", title: "Destination Place" },
     { key: "trustMember", title: "Responsible People"  },
     { key: "products", title: "Products" }, 
     { key: "startStorage", title: "Start Storage" }

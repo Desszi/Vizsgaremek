@@ -16,7 +16,8 @@ export class UsersComponent implements OnInit {
   users: Observable<User[]> = this.userService.getAll();
 
   tableColumns: ITableColumn [] = this.config.userColumns;
-  
+  list$: Observable<User[]> = this.userService.getAll();
+
   constructor (
     private userService : UserService,
     private config: ConfigService,

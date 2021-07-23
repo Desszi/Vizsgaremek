@@ -5,7 +5,7 @@ export class Transport {
 
     _id: string = "";
     travelBy: string ="";
-    destination: string ="" ;
+    place: string ="" ; //destinationplace
     trustMember: User = new User();
     products: Product[] = [];
     startStorage: Storage = new Storage();

@@ -16,6 +16,7 @@ export class StoragesComponent implements OnInit {
   storages: Observable<Storage[]> = this.storageService.getAll();
   tableColumns: ITableColumn [] = this.config.storageColumns;
 
+  list$: Observable<Storage[]> = this.storageService.getAll();
   constructor (
     private storageService : StorageService,
     private config: ConfigService,

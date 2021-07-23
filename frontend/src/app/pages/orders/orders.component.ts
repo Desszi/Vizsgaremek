@@ -16,6 +16,8 @@ export class OrdersComponent implements OnInit {
   orders: Observable<Order[]> = this.orderService.getAll();
   tableColumns: ITableColumn [] = this.config.userColumns;
 
+  list$: Observable<Order[]> = this.orderService.getAll();
+
   constructor (
     private orderService : OrderService,
     private config : ConfigService,

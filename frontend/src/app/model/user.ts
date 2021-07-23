@@ -3,8 +3,8 @@ import { Order } from "./order";
 export class User {
 
     _id: string = "";
-    firstName: string = "";
-    lastName: string = "";
+    first_name: string = "";
+    last_name: string = "";
     birthDate: Date = new Date();
     birthPlace: string ="";
     email: string = "";

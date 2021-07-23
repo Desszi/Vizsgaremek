@@ -16,6 +16,8 @@ export class BillsComponent implements OnInit {
   bills: Observable<Bill[]> = this.billService.getAll();
   tableColumns: ITableColumn [] = this.config.userColumns;
 
+  list$: Observable<Bill[]> = this.billService.getAll();
+
   constructor (
     private billService : BillService,
     private config: ConfigService

@@ -1077,7 +1077,7 @@
             "last_name":"Porkoláb",
             "birthDate":"8/22/1999",
             "birthPlace":"Budapest",
-            "email":"09dporkolab@gmail.com",
+            "email":"09dporkolabm@gmail.com",
             "address":"1108 Budapest Korall utca 21",
             "active":true,
             "businessRelationship":"business partner"}
@@ -2898,7 +2898,7 @@
             "opened":false},
         {
             "_id":41,
-            "name":"Anacardium orientale, Antimon.crud., Arg. nit., Berber. vulg., Bryonia, Chelidonium majus, Digitalis, Graphites, Humulus,Iris versicolor, Kali carb., Lycopodium, Nat. carb.,Nat. sulphuricum, Nux vom., Pulsatilla, Rhus. toxicodendron, Scutellaria lateriflora, Sepia,Stramonium, Chamomilla, Passiflora, Valeriana.",
+            "name":"Anacardium orientale",
             "place":"0 Upham Point",
             "opened":false},
         {
@@ -2983,17 +2983,17 @@
             "opened":true},
         {
             "_id":58,
-            "name":"Gnaphalium polycephalum, Viscum album, Aconitum napellus, Ledum palustre, Magnesia phosphorica, Rhus toxicodendron",
+            "name":"Gnaphalium polycephalum",
             "place":"23099 Warner Junction",
             "opened":true},
         {
             "_id":59,
-            "name":"Apis mellifica, Arsenicum album, Borax, Capsicum annuum, Graphites, Mentha piperita, Mezereum, Natrum muriaticum, Nux vomica, Petroleum, Ranunculus bulbosus, and Rhus toxicodendron",
+            "name":"Apis mellifica, Arsenicum album",
             "place":"56 Buena Vista Drive",
             "opened":true},
         {
             "_id":60,
-            "name":"Dextroamphetamine Saccharate, Amphetamine Aspartate, Dextroamphetamine Sulfate, and Amphetamine Sulfate",
+            "name":"Dextroamphetamine Saccharate",
             "place":"1847 Raven Park",
             "opened":true},
         {
@@ -3063,7 +3063,7 @@
             "opened":true},
         {
             "_id":74,
-            "name":"Dextroamphetamine Sulfate, Dextroamphetamine Saccharate, Amphetamine Sulfate and Amphetamine Aspartate",
+            "name":"Dextroamphetamine Sulfate",
             "place":"299 Northview Place",
             "opened":false},
         {

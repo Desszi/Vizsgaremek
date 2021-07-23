@@ -16,6 +16,8 @@ export class ProductsComponent implements OnInit {
   products: Observable<Product[]> = this.productService.getAll();
   tableColumns: ITableColumn [] = this.config.productColumns;
 
+  list$: Observable<Product[]> = this.productService.getAll();
+
   constructor (
     private productService : ProductService,
     private config : ConfigService,
