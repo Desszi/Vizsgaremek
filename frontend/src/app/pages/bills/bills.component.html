@@ -1,2 +1,4 @@
-<h1>List of Bills</h1>
-<pre>{{ bills | async | json}}</pre>
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Bills</h1>
+    <app-table-contect [tableColumns] = "tableColumns"></app-table-contect> 
+</div>

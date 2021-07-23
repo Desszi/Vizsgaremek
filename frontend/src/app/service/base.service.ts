@@ -1,19 +1,24 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { ConfigService } from './config.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BaseService<T> {
 
-  private readonly apiURL: string = 'http://localhost:3000/';
   entity: string = "";
   constructor(
-    public http: HttpClient
+    public http: HttpClient,
+    public config: ConfigService,
   ) { }
 
   getAll(): Observable<T[]> {
-    return this.http.get<T[]>(`${this.apiURL}${this.entity}`);
+    return this.http.get<T[]>(`${this.config.apiURL}${this.entity}`);
+  }
+
+  get(_id:string): Observable<T> {
+    return this.http.get<T>(`${this.config.apiURL}${this.entity}/${_id}`);
   }
 }

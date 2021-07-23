@@ -5,9 +5,11 @@
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
+    "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "server": "json-server ./server/database.json --id=_id --watch"
   },
   "private": true,
   "dependencies": {

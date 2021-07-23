@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Bill } from 'src/app/model/bill';
 import { BillService } from 'src/app/service/bill.service';
+import { ConfigService, ITableColumn } from 'src/app/service/config.service';
 
 @Component({
   selector: 'app-bills',
@@ -13,9 +14,11 @@ export class BillsComponent implements OnInit {
   title = 'frontend-bill';
 
   bills: Observable<Bill[]> = this.billService.getAll();
+  tableColumns: ITableColumn [] = this.config.userColumns;
 
   constructor (
     private billService : BillService,
+    private config: ConfigService
   ) {}
 
   ngOnInit(): void {
