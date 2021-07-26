@@ -14,7 +14,7 @@ export class OrdersComponent implements OnInit {
   title = 'frontend-order';
 
   orders: Observable<Order[]> = this.orderService.getAll();
-  tableColumns: ITableColumn [] = this.config.userColumns;
+  tableColumns: ITableColumn [] = this.config.orderColumns;
 
   list$: Observable<Order[]> = this.orderService.getAll();
 

@@ -2093,7 +2093,6 @@
             "active":true}
     ], 
     "products": [
-        [
             {
                 "_id":1,
                 "name":"Pork - Back, Short Cut, Boneless",
@@ -2693,7 +2692,7 @@
                 "name":"Yogurt - Strawberry, 175 Gr",
                 "description":"Restriction of Left Ulnar Artery with Extraluminal Device, Percutaneous Endoscopic Approach",
                 "price":1710,
-                "available":true}]
+                "available":true}
     ], 
     "storages": [
         {
