@@ -5,5 +5,5 @@ export class Product {
     description: string ="";
     price: number = 0;
     available: boolean = false;
-    storage: Storage =  new Storage();
+    //storage: Storage =  new Storage();
 }

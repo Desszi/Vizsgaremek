@@ -16,6 +16,8 @@ import { StoragesComponent } from './pages/storages/storages.component';
 import { TransportsComponent } from './pages/transports/transports.component';
 import { TableContectComponent } from './common/table-contect/table-contect.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ProductEditComponent } from './pages/product-edit/product-edit.component';
+import { AreusFormModule } from './areus-form/areus-form.module';
 
 @NgModule({
   declarations: [
@@ -30,13 +32,15 @@ import { LoginComponent } from './pages/login/login.component';
     StoragesComponent,
     TransportsComponent,
     TableContectComponent,
-    LoginComponent, 
-  ],
+    LoginComponent,
+    ProductEditComponent, 
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    AreusFormModule,
   ],
   providers: [BaseService],
   bootstrap: [AppComponent]
