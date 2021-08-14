@@ -15,6 +15,7 @@ import { OrdersComponent } from './pages/orders/orders.component';
 import { StoragesComponent } from './pages/storages/storages.component';
 import { TransportsComponent } from './pages/transports/transports.component';
 import { TableContectComponent } from './common/table-contect/table-contect.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TableContectComponent } from './common/table-contect/table-contect.comp
     OrdersComponent,
     StoragesComponent,
     TransportsComponent,
-    TableContectComponent, 
+    TableContectComponent,
+    LoginComponent, 
   ],
   imports: [
     BrowserModule,

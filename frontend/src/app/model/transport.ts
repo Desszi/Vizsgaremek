@@ -3,7 +3,7 @@ import { Product } from "./product";
 
 export class Transport {
 
-    _id: string = "";
+    _id: number =0 ;
     travelBy: string ="";
     place: string ="" ; //destinationplace
     trustMember: User = new User();

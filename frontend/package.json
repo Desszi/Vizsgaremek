@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server": "json-server ./server/database.json --id=_id --watch"
+    "server": "json-server-auth ./server/database.json --id=_id --watch"
   },
   "private": true,
   "dependencies": {

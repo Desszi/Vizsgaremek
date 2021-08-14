@@ -5,7 +5,7 @@ import { User } from "./user";
 
 export class Order {
 
-    _id: string = "";
+    _id: number =0;
     time: Date = new Date();
     comment: string = "";
     active: boolean = false;
