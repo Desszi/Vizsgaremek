@@ -2,6 +2,8 @@
     <h1 class="mt-4">Storages</h1>
     <app-table-contect 
         [tableColumns] = "tableColumns"
-        [list$] = "list$">
+        [list$] = "list$"
+        (selectOne)= "onSelectOne($event)">
+
     </app-table-contect> 
 </div>

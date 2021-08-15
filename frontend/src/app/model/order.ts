@@ -9,9 +9,10 @@ export class Order {
     time: Date = new Date();
     comment: string = "";
     active: boolean = false;
-    businessUser: User =  new User();
-    products: Product[] = [];
-    transport: Transport = new Transport();
-   
+    // businessUser: User =  new User();
+    // products: Product[] = [];
+    // transport: Transport = new Transport();
+    businessUser: string = '';
+    transport: string ='';
 
 }

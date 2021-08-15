@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Order } from 'src/app/model/order';
 import { ConfigService, ITableColumn } from 'src/app/service/config.service';
@@ -21,9 +22,13 @@ export class OrdersComponent implements OnInit {
   constructor (
     private orderService : OrderService,
     private config : ConfigService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
   }
 
+  onSelectOne(order: Order): void {
+    this.router.navigate(['/', 'orders','edit', order._id])
+  }
 }

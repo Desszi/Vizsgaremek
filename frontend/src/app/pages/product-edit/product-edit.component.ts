@@ -51,7 +51,7 @@ export class ProductEditComponent implements OnInit {
       new InputField({key: 'name', label:'Name', type: 'text', value: this.product.name, 
       validators: [Validators.required, Validators.minLength(5), Validators.pattern(/^[A-Ű]{1}.*$/) ], errorMessage: 'Wrong product name. Please take a good name!' }),
       new TextareaField({key: 'description', label:'Description', value: this.product.description}),
-      new TextareaField({key: 'price', label:'Price', type: 'number', value: this.product.price as unknown as string }),
+      new InputField({key: 'price', label:'Price', type: 'number', value: this.product.price as unknown as string }),
   
     ]
   }

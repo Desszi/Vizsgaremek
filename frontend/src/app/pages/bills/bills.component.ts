@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Bill } from 'src/app/model/bill';
 import { BillService } from 'src/app/service/bill.service';
@@ -20,10 +21,15 @@ export class BillsComponent implements OnInit {
 
   constructor (
     private billService : BillService,
-    private config: ConfigService
+    private config: ConfigService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
+  }
+
+  onSelectOne(bill: Bill): void {
+    this.router.navigate(['/', 'bills','edit', bill._id])
   }
 
 }

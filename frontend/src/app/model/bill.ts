@@ -7,6 +7,8 @@ export class Bill {
     name: string = "";
     grandTotal: number = 0;
     paid: boolean = false;
-    customer: User =  new User();
+    // customer: User =  new User();
     products: Product[] = [];
+    customer: string =  '';
+
 }

@@ -18,6 +18,11 @@ import { TableContectComponent } from './common/table-contect/table-contect.comp
 import { LoginComponent } from './pages/login/login.component';
 import { ProductEditComponent } from './pages/product-edit/product-edit.component';
 import { AreusFormModule } from './areus-form/areus-form.module';
+import { UserEditComponent } from './pages/user-edit/user-edit.component';
+import { BillEditComponent } from './pages/bill-edit/bill-edit.component';
+import { StorageEditComponent } from './pages/storage-edit/storage-edit.component';
+import { OrderEditComponent } from './pages/order-edit/order-edit.component';
+import { TransportEditComponent } from './pages/transport-edit/transport-edit.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,12 @@ import { AreusFormModule } from './areus-form/areus-form.module';
     TransportsComponent,
     TableContectComponent,
     LoginComponent,
-    ProductEditComponent, 
+    ProductEditComponent,
+    UserEditComponent,
+    BillEditComponent,
+    StorageEditComponent,
+    OrderEditComponent,
+    TransportEditComponent,
     ],
   imports: [
     BrowserModule,
