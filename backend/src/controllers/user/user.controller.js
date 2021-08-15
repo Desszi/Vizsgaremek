@@ -4,17 +4,15 @@ const createError = require('http-errors');
 const userService = require('./user.service');
 
 exports.create = (req, res, next) => {
-    const { last_name, first_name, email } = req.body;
-    if (!last_name || !first_name || !email) {
+    const { last_name, first_name, birthDate, birthPlace, email, address, active, busibessRelationship, orders, password, accessToken } = req.body;
+    if (!email) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
     }
 
     const newUser = {
-        firstName: first_name,
-        lastName: last_name,
-        email: email
+        first_name, last_name, birthDate, birthPlace, email, address, active, busibessRelationship, orders: orders || [], password, accessToken
     };
 
     return userService.create(newUser)
@@ -44,18 +42,12 @@ exports.findOne = (req, res, next) => {
 
 exports.update = (req, res, next) => {
     const id = req.params.id;
-    const { first_name, last_name, email } = req.body;
-    if (!last_name || !first_name || !email) {
+    const { last_name, first_name, birthDate, birthPlace, email, address, active, busibessRelationship, orders, password, accessToken } = req.body;
+    if (!email) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
     }
-
-    const update = {
-        firstName: first_name,
-        lastName: last_name,
-        email: email
-    };
     return userService.update(req.params.id, update)
         .then(user => {
             res.json(user);

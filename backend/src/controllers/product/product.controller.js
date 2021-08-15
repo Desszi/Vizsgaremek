@@ -4,17 +4,15 @@ const createError = require('http-errors');
 const productService = require('./product.service');
 
 exports.create = (req, res, next) => {
-    const { last_name, first_name, email } = req.body;
-    if (!last_name || !first_name || !email) {
+    const { name, description, price, available, storage} = req.body;
+    if (!name || !price || !available) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
     }
 
     const newpProduct = {
-        firstName: first_name,
-        lastName: last_name,
-        email: email
+        name, description, price, available, storage: storage || ''
     };
 
     return productService.create(newpProduct)
@@ -44,18 +42,12 @@ exports.findOne = (req, res, next) => {
 
 exports.update = (req, res, next) => {
     const id = req.params.id;
-    const { first_name, last_name, email } = req.body;
-    if (!last_name || !first_name || !email) {
+    const { name, description, price, available, storage} = req.body;
+    if (!name || !price || !available) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
     }
-
-    const update = {
-        firstName: first_name,
-        lastName: last_name,
-        email: email
-    };
     return productService.update(req.params.id, update)
         .then(product => {
             res.json(product);

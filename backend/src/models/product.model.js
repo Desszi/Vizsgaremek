@@ -1,13 +1,23 @@
 const mongoose = require('mongoose');
 
 const ProductSchema = mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    email: String,
-    posts: [
+    name: {
+        type: String, 
+        required: true,
+    },
+    description: String,
+    price: {
+        type: Number,
+        required: true
+    },
+    available: {
+        type: Boolean,
+        required: true
+    },
+    storage: [
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'Post'
+            ref: 'Storage',
         }
     ]
 }, {

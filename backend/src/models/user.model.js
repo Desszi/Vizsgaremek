@@ -4,10 +4,19 @@ const UserSchema = mongoose.Schema({
     firstName: String,
     lastName: String,
     email: String,
-    posts: [
+    birthDate: Date,
+    birthPlace: String,
+    email: {
+        type: String,
+        required: true,
+    },
+    address: String,
+    active: Boolean,
+    businessRelationship: String,
+    orders: [
         {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'Post'
+            type: [mongoose.Schema.Types.ObjectId],
+            ref: 'Order',
         }
     ]
 }, {

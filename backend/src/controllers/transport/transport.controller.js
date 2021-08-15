@@ -4,17 +4,15 @@ const createError = require('http-errors');
 const transportService = require('./transport.service');
 
 exports.create = (req, res, next) => {
-    const { last_name, first_name, email } = req.body;
-    if (!last_name || !first_name || !email) {
+    const { travelBy, place, trustMember, products, startStorage } = req.body;
+    if (!place || !trustMember) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
     }
 
     const newTransport = {
-        firstName: first_name,
-        lastName: last_name,
-        email: email
+        travelBy, place, trustMember, products, startStorage
     };
 
     return transportService.create(newTransport)
@@ -44,18 +42,12 @@ exports.findOne = (req, res, next) => {
 
 exports.update = (req, res, next) => {
     const id = req.params.id;
-    const { first_name, last_name, email } = req.body;
-    if (!last_name || !first_name || !email) {
+    const { travelBy, place, trustMember, products, startStorage } = req.body;
+    if (!place || !trustMember) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
     }
-
-    const update = {
-        firstName: first_name,
-        lastName: last_name,
-        email: email
-    };
     return transportService.update(req.params.id, update)
         .then(transport => {
             res.json(transport);

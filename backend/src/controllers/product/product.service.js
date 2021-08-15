@@ -5,9 +5,9 @@ exports.create = productData => {
     return product.save();
 };
 
-exports.findAll = () => product.find().populate('posts');
+exports.findAll = () => product.find().populate('storage');
 
-exports.findOne = id => product.findById(id).populate('posts');
+exports.findOne = id => product.findById(id).populate('storage');
 
 exports.update = (id, updateData) => product.findByIdAndUpdate(id, updateData, {new: true});
 

@@ -1,15 +1,30 @@
 const mongoose = require('mongoose');
 
 const TransportSchema = mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    email: String,
-    posts: [
+    travelBy: String,
+    place: {
+        type: String,
+        required: true,
+    }, //destinationplace
+    trustMember: [
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'Post'
+            ref: 'User',
+            required: true
         }
-    ]
+    ],
+    products: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Product',
+        }
+    ],
+    startStorage: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Storage',
+        }
+    ],
 }, {
     timeStamps: true
 });

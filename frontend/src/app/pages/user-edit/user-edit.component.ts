@@ -46,7 +46,7 @@ export class UserEditComponent implements OnInit {
   setForm(): void {
     this.fields = [
       new InputField({key: '_id', label:'', type: 'hidden', value: this.user._id as unknown as string }),
-      new InputField({key: 'fist_name', label:'First Name', type: 'text', value: this.user.first_name as unknown as string, 
+      new InputField({key: 'first_name', label:'First Name', type: 'text', value: this.user.first_name as unknown as string, 
       validators: [Validators.required, Validators.minLength(5), Validators.pattern(/^[A-Ű]{1}.*$/) ], errorMessage: 'Wrong user first name. Please take a good name!' }),
       new InputField({key: 'last_name', label:' Last Name', type: 'text', value: this.user.first_name as unknown as string, 
       validators: [Validators.required, Validators.minLength(5), Validators.pattern(/^[A-Ű]{1}.*$/) ], errorMessage: 'Wrong user first name. Please take a good name!' }),

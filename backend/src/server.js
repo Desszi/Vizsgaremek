@@ -9,6 +9,7 @@ const YAML = require('yamljs');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
+// Authenctication.
 const authenticateJwt = require('./auth/authenticate');
 const adminOnly = require('./auth/adminOnly');
 const authHandler = require('./auth/authHandler');
@@ -31,18 +32,17 @@ app.use(morgan('combined', {stream: logger.stream}));
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
+// Router.
 app.post('/login', authHandler.login);
 app.post('/refresh', authHandler.refresh);
 app.post('/logout', authHandler.logout);
 
-app.use('/user', authenticateJwt, require('./controllers/user/user.routes'));
-app.use('/product', authenticateJwt, require('./controllers/product/product.routes'));
-app.use('/bill', authenticateJwt, require('./controllers/bill/bill.routes'));
-app.use('/storage', authenticateJwt, require('./controllers/storage/storage.routes'));
-app.use('/transport', authenticateJwt, require('./controllers/transport/transport.routes'));
-
-app.use('/post', authenticateJwt, adminOnly, require('./controllers/post/post.routes'));
-app.use('/order', authenticateJwt, adminOnly, require('./controllers/order/order.routes'));
+app.use('/bills', authenticateJwt, adminOnly, require('./controllers/bill/bill.routes'));
+app.use('/orders', authenticateJwt, adminOnly, require('./controllers/order/order.routes'));
+app.use('/products', authenticateJwt, adminOnly, require('./controllers/product/product.routes'));
+app.use('/storages', authenticateJwt, adminOnly, require('./controllers/storage/storage.routes'));
+app.use('/users', authenticateJwt, adminOnly, require('./controllers/user/user.routes'));
+app.use('/transports', authenticateJwt, adminOnly, require('./controllers/transport/transport.routes'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use( (err, req, res, next) => {

@@ -5,9 +5,9 @@ exports.create = userData => {
     return user.save();
 };
 
-exports.findAll = () => user.find().populate('posts');
+exports.findAll = () => user.find().populate('orders');
 
-exports.findOne = id => user.findById(id).populate('posts');
+exports.findOne = id => user.findById(id).populate('orders');
 
 exports.update = (id, updateData) => user.findByIdAndUpdate(id, updateData, {new: true});
 

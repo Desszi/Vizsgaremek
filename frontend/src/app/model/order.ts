@@ -7,12 +7,10 @@ export class Order {
 
     _id: number =0;
     time: Date = new Date();
-    comment: string = "";
+    comment?: string = "";
     active: boolean = false;
-    // businessUser: User =  new User();
-    // products: Product[] = [];
-    // transport: Transport = new Transport();
-    businessUser: string = '';
-    transport: string ='';
+    businessUser: User =  new User();
+    products?: Product[] = [];
+    transport?: Transport = new Transport();
 
 }

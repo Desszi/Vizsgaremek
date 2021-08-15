@@ -6,7 +6,7 @@ export class Storage{
     name: string = "";
     place: string = "";
     opened: boolean = true;
-    products: Product[] = [];
+    products?: Product[] = [];
 
 }
 

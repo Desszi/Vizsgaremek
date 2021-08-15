@@ -7,7 +7,7 @@ export class User {
     last_name?: string = "";
     birthDate?: Date = new Date();
     birthPlace?: string ="";
-    email?: string = "";
+    email: string = "";
     address?: string = "";
     active?: boolean = true;
     businessRelationship?: string = "";

@@ -1,15 +1,32 @@
 const mongoose = require('mongoose');
 
 const BillSchema = mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    email: String,
-    posts: [
+    name: {
+        type: String,
+        required: true,
+
+    } ,
+    grandTotal: {
+        type: Number,
+        required: true,
+    },
+    paid: {
+        type: Boolean,
+        required: true
+    },
+    customer: [
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'Order'
+            ref: 'User',
+            required: true
         }
-    ]
+    ],
+    products: [
+        {
+            type: [mongoose.Schema.Types.ObjectId],
+            ref: 'Product',
+        }
+    ],
 }, {
     timeStamps: true
 });

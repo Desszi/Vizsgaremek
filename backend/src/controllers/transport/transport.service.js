@@ -5,9 +5,9 @@ exports.create = transportData => {
     return transport.save();
 };
 
-exports.findAll = () => transport.find().populate('posts');
+exports.findAll = () => transport.find().populate('trustMember').populate('products').populate('startStorage');
 
-exports.findOne = id => transport.findById(id).populate('posts');
+exports.findOne = id => transport.findById(id).populate('trustMember').populate('products').populate('startStorage');
 
 exports.update = (id, updateData) => transport.findByIdAndUpdate(id, updateData, {new: true});
 

@@ -4,17 +4,15 @@ const createError = require('http-errors');
 const storageService = require('./storage.service');
 
 exports.create = (req, res, next) => {
-    const { last_name, first_name, email } = req.body;
-    if (!last_name || !first_name || !email) {
+    const { name, place, opened, products } = req.body;
+    if (!name || !place || !opened) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
     }
 
     const newStorage = {
-        firstName: first_name,
-        lastName: last_name,
-        email: email
+       name, place, opened, products: products || []
     };
 
     return storageService.create(newStorage)
@@ -44,18 +42,12 @@ exports.findOne = (req, res, next) => {
 
 exports.update = (req, res, next) => {
     const id = req.params.id;
-    const { first_name, last_name, email } = req.body;
-    if (!last_name || !first_name || !email) {
+    const { name, place, opened, products } = req.body;
+    if (!name || !place || !opened) {
         return next(
             new createError.BadRequest("Missing properties!")
         );
     }
-
-    const update = {
-        firstName: first_name,
-        lastName: last_name,
-        email: email
-    };
     return storageService.update(req.params.id, update)
         .then(storage => {
             res.json(storage);
