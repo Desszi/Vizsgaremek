@@ -15,9 +15,11 @@ Ez a webes alkalmazás egy vállalatirányítási rendszernek a lehetőségeit m
 
 ## **3. Az alkalmazás konfigurálása**
 
-A _base.service.ts_ állományban be kell állítani az API végpont elérési útvonalát:  
 
-[comment]: <> (Kiegészítés később - pl. http://localhost:3000)
+A Vizsgaremek/frontend/environments mappában be kell állítani az API végpont elérési útvonalát: 
+
+  - _environment.ts_ állomány: http://127.0.0.1:3000/  
+  - _environment.prod.ts_ állomány: http://localhost:3000/ 
 
 ---
 
@@ -40,7 +42,7 @@ E-mail | Jelszó
 
 ## **5. A végpontok dokumentációja**
 
-[Swagger](https://)
+[Swagger](https://localhost:3000/api-docs)
 
 ---
 ---
