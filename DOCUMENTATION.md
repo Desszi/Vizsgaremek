@@ -5,12 +5,12 @@ Ez a webes alkalmazás egy vállalatirányítási rendszernek a lehetőségeit m
 ---
 
 ## **2. Az alkalmazás telepítése**
-
-- A célgépre le kell klónozni az adott GitHub repository tartalmát.
+- A célgépre le kell klónozni az adott GitHub repository tartalmát forkolás után.
 - Gyökérkönyvtárnak a klónozott könyvtárat kell beállítani `code . -r` segítségével.
 - Telepíteni kell az alkalmazás függőségeit az `npm i` paranccsal.
 - Ha további fejlesztések szükségesek, akkor telepíteni kell az Angular keretrendszert az `npm i -g @angular/cli` paranccsal.
-
+- A terminálban ki kell adni az ng build parancsot.
+- A terminálon be kell lépni a /backend mappába és futtatni az `npm run build` parancsot.
 ---
 
 ## **3. Az alkalmazás konfigurálása**
