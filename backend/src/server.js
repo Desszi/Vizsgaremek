@@ -18,9 +18,9 @@ const authHandler = require('./auth/authHandler');
 
 const swaggerDocument = YAML.load('./docs/swager.yaml');
 
-//const { username, password, host } = config.get('database');
+const { host } = config.get('database');
 mongoose
-    .connect(`mongodb+srv://desszi:prklbmrcdsz@cluster0.ch7b6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
+    .connect(host, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
