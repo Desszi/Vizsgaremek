@@ -2,16 +2,15 @@
   "users": [
     {
       "_id": 1,
-      "first_name": "Ali",
-      "last_name": "Aliju",
-      "birthDate": "9/28/1987",
-      "birthPlace": "Noyelles-sous-Lens",
-      "email": "acarus0@admin.ch",
-      "address": "76854 Barnett Crossing",
-      "active": false,
-      "businessRelationship": "customer",
-      "password": "$2a$10$GW9uTOt9pWSrKRYcc5c1EeCeSuuF6rDuiEX4EkthoViFRvpcbh.v2",
-      "fist_name": "Aliku"
+      "first_name": "Porkoláb",
+      "last_name": "Mercédesz",
+      "birthDate": "8/22/1999",
+      "birthPlace": "Budapest",
+      "email": "09dporkolabm@gmail.com",
+      "address": "1108 Budapest Korall utca 21",
+      "active": true,
+      "businessRelationship": "boss",
+      "password": "$2a$10$GW9uTOt9pWSrKRYcc5c1EeCeSuuF6rDuiEX4EkthoViFRvpcbh.v2"
     },
     {
       "_id": 2,

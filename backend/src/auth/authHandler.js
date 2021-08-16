@@ -2,13 +2,13 @@ const jwt = require('jsonwebtoken');
 
 const Users = [
     {
-        username: 'admin',
-        password: 'admin_pw',
+        email: '09dporkolabm@gmail.com',
+        password: 'test1234',
         role: 'admin'
     },
     {
-        username: 'user',
-        password: 'user_pw',
+        email: '09dporkolabm@gmail.com',
+        password: 'test1234',
         role: 'user'
     }
 ];
@@ -38,10 +38,11 @@ module.exports.login = (req, res) => {
 
         res.json({
             accessToken,
-            refreshToken
+            refreshToken,
+            user
         });
     } else {
-        res.send('Username or password incorrect.');
+        res.send('Email or password incorrect.');
     }
 
 };

@@ -7,6 +7,7 @@ const morgan = require('morgan');
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
 const mongoose = require('mongoose');
+const cors = require('../config/cors')
 mongoose.Promise = global.Promise;
 
 // Authenctication.
@@ -28,6 +29,13 @@ mongoose
         process.exit();
     });
 
+// app.use((req, res, next) => {
+//     res.setHeader('Access-Control-Allow-Origin', '*');
+//     res.setHeader('Access-Control-Allow-Headers', '*');
+//     res.setHeader('Access-Control-Allow-Methods', '*');
+//     next();
+// });
+app.use(cors())
 app.use(morgan('combined', {stream: logger.stream}));
 app.use(express.static('public'));
 app.use(bodyParser.json());
