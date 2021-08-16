@@ -1,18 +1,77 @@
-<div class="container-fluid px-4">
-    <h1 class="mt-4">Sidenav dark</h1>
-    <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-        <li class="breadcrumb-item active">Sidenav dark</li>
-    </ol>
-    <div class="card mb-4">
-        <div class="card-body">
-            This page is an example of using the dark side navigation option. By appending the
-            <code>.sb-sidenav-dark</code>
-            class to the
-            <code>.sb-sidenav</code>
-            class, the side navigation will take on a dark color scheme. The
-            <code>.sb-sidenav-dark</code>
-            is also available for a darker option.
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid px-4">
+
+        <h1 class="mt-4">Vállalatirányítási rendszer kezdőoldala</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item active">Vállalatirányításirendszer kezdőoldala</li>
+        </ol>
+        <div class="card mb-4">
+            <div class="card-body">
+                Ez a webes alkalmazás egy vállalatirányítási rendszernek a lehetőségeit mutatja be a felhasználó számára. Egy vállalatnak az irányításához szükséges erőforrások, termékek, raktárak, üzleti partnerek, megrendelések, számlák, vevők adatainak nyilvántartását tárja elénk egy könnyen kezelhető adminisztrációs felülettel. 
+            </div>
+        </div>
+
+    <div id="indexCarousel" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#indexCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#indexCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#indexCarousel" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/src/assets/img/first_picture.jpg" class="d-block w-100" alt="ERP-01">
+              <div class="carousel-caption d-none d-md-block bg-dark p-2">
+                <h5>ERP1</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Impedit odit numquam officia! Dicta dolor eius sit laboriosam aspernatur iure saepe! 
+                  Veritatis quis officia aliquam. Cumque expedita reiciendis aliquam facilis optio?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/src/assets/img/second_erp.jpg" class="d-block w-100" alt="ERP-02">
+              <div class="carousel-caption d-none d-md-block bg-dark p-2">
+                <h5>ERP2</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Asperiores, dolorem vitae facilis, officia non aspernatur tempore temporibus et laboriosam nulla, eius ipsam cumque delectus voluptate debitis nesciunt nisi! 
+                  Ratione, consequatur?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/src/assets/img/third_pick.jpg" class="d-block w-100" alt="ERP-03">
+              <div class="carousel-caption d-none d-md-block bg-dark p-2">
+                <h5>ERP3</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Iure, doloribus. 
+                  Recusandae, quo odit ipsam fugiat labore aliquam esse voluptatibus tenetur sed qui maiores delectus quisquam ad error laboriosam porro culpa!</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#indexCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Előző</span>
+          </a>
+          <a class="carousel-control-next" href="#indexCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Következő</span>
+          </a>
         </div>
     </div>
-</div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <script>
+        $('#indexCarousel').carousel({
+          intervel: 5000
+        })
+      </script>
+  </body>
+
+
+
+
+
