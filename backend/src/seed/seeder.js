@@ -26,12 +26,6 @@ const seedCollection = async (model, fileName) => {
 
 ( async () => {
 
-    try {
-        await Bill.db.dropCollection('bills');
-    } catch(e) {
-        console.log('BILL NOT FOUND');
-    }
-
     seedCollection(Bill, 'bills');
     seedCollection(Order, 'orders');
     seedCollection(Product, 'products');

@@ -1,6 +1,6 @@
 export class Product {
 
-    _id: number =0;
+    _id: string ="";
     name: string = "";
     description?: string ="";
     price: number = 0;

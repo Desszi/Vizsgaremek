@@ -3,7 +3,7 @@ import { User } from "./user";
 
 export class Bill {
 
-    _id: number = 0;
+    _id: string = "";
     name: string = "";
     grandTotal: number = 0;
     paid: boolean = false;

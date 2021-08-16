@@ -2,7 +2,7 @@ import { Product } from "./product";
 
 export class Storage{
 
-    _id: number =0;
+    _id: string ="";
     name: string = "";
     place: string = "";
     opened: boolean = true;

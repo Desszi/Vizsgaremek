@@ -43,7 +43,7 @@ export class BillEditComponent implements OnInit {
 
   setForm(): void {
     this.fields = [
-      new InputField({key: '_id', label:'', type: 'hidden', value: this.bill._id as unknown as string }),
+      new InputField({key: '_id', label:'', type: 'hidden', value: this.bill._id }),
       new InputField({key: 'name', label:'Name', type: 'text', value: this.bill.name}), 
       new InputField({key: 'customer', label:'Customer', type: 'text', value: this.bill.customer as unknown as string}),
       new InputField({key: 'grand', label:'GrandTotal', type: 'number', value: this.bill.grandTotal as unknown as string }),

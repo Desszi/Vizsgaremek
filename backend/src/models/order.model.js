@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const OrderSchema = mongoose.Schema({
-    time: Date,
+    time: String ,
     comment: String,
     active: Boolean,
     // businessUser: User =  new User();
