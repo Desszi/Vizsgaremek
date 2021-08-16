@@ -1,4 +1,4 @@
-module.exports =  [
+[
     {
       "_id": 1,
       "first_name": "Porkoláb",
@@ -9,7 +9,7 @@ module.exports =  [
       "address": "1108 Budapest Korall utca 21",
       "active": true,
       "businessRelationship": "boss",
-      "password": "test1234",
+      "password": "test1234"
     },
     {
       "_id": 2,
@@ -1069,12 +1069,12 @@ module.exports =  [
     },
     {
       "_id": 100,
-      "first_name": "Mercédesz",
-      "last_name": "Porkoláb",
-      "birthDate": "8/22/1999",
-      "birthPlace": "Budapest",
-      "email": "09dporkolabm@gmail.com",
-      "address": "1108 Budapest Korall utca 21",
+      "first_name": "Nóra",
+      "last_name": "Varga",
+      "birthDate": "10/04/1999",
+      "birthPlace": "Debrecen",
+      "email": "varga.nora@gmail.com",
+      "address": "5352 Karcag",
       "active": true,
       "businessRelationship": "business partner"
     }
