@@ -25,7 +25,16 @@ A _base.service.ts_ állományban be kell állítani az API végpont elérési �
 
 A megadott Docker container indítása és inicializálása.
 
-[comment]: <> (Kiegészítés később)
+-  Docker Desktop alkalmazás indítása saját gépen.
+-  A Vizsgaremek/backend mappába belépve a terminálban: `npm run dev` parancsot kell kiadni.  
+-  A Vizsgaremek/frontend mappába belépve a terminálban:`npm start` paranccsal indítható a frontend.
+
+_Megjegyzés_:  
+A belépéshez egy érvényes e-mail-cím és jelszó páros (példa):  
+
+E-mail | Jelszó
+------------ | -------------
+09dporkolabm@gmail.com | test1234
 
 ---
 
