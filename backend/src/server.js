@@ -7,7 +7,7 @@ const morgan = require('morgan');
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
 const mongoose = require('mongoose');
-const cors = require('../config/cors')
+const cors = require('./config/cors')
 mongoose.Promise = global.Promise;
 
 // Authenctication.
@@ -49,7 +49,7 @@ app.use('/bills', authenticateJwt, adminOnly, require('./controllers/bill/bill.r
 app.use('/orders', authenticateJwt, adminOnly, require('./controllers/order/order.routes'));
 app.use('/products', authenticateJwt, adminOnly, require('./controllers/product/product.routes'));
 app.use('/storages', authenticateJwt, adminOnly, require('./controllers/storage/storage.routes'));
-app.use('/users', authenticateJwt, adminOnly, require('./controllers/user/user.routes'));
+app.use('/users', authenticateJwt, require('./controllers/user/user.routes'));
 app.use('/transports', authenticateJwt, adminOnly, require('./controllers/transport/transport.routes'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
