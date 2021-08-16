@@ -51,5 +51,3 @@ E-mail | Jelszó
 
 - [A User Story (adminisztrátori szerepkör) itt érhető el.](https://github.com/Desszi/Vizsgaremek/blob/main/README.md)
 
-- [A kiegészítő anyagok itt érhetők el.]()
-
