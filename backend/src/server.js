@@ -9,6 +9,7 @@ const YAML = require('yamljs');
 const mongoose = require('mongoose');
 const cors = require('./config/cors')
 mongoose.Promise = global.Promise;
+//prklbmrcdsz
 
 // Authenctication.
 const authenticateJwt = require('./auth/authenticate');
@@ -17,9 +18,9 @@ const authHandler = require('./auth/authHandler');
 
 const swaggerDocument = YAML.load('./docs/swager.yaml');
 
-const { username, password, host } = config.get('database');
+//const { username, password, host } = config.get('database');
 mongoose
-    .connect(`mongodb://${host}`, {
+    .connect(`mongodb+srv://desszi:prklbmrcdsz@cluster0.ch7b6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
